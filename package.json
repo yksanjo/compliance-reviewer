@@ -1,0 +1,25 @@
+{
+  "name": "compliance-reviewer",
+  "version": "1.0.0",
+  "description": "Compliance Reviewer - Automated regulatory compliance checking",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": ["compliance", "regulatory", "gdpr", "soc2", "hipaa", "ai"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "pdf-parse": "^1.1.1",
+    "uuid": "^9.0.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/uuid": "^9.0.8",
+    "typescript": "^5.4.3",
+    "ts-node": "^10.9.2"
+  }
+}
