@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "test": "npm run build && node --test tests-smoke.mjs"
   },
   "keywords": ["compliance", "regulatory", "gdpr", "soc2", "hipaa", "ai"],
   "author": "",
