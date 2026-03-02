@@ -1,20 +1,17 @@
 # Architecture
 
-## Domain
+## Purpose
 
-Gov/Compliance Document Review
+compliance-reviewer evaluates core runtime signals to support reliable product operations.
 
-## Core Components
+## Components
 
-1. Ingestion and input validation boundary
-2. Domain service layer with deterministic business logic
-3. Persistence/adapters (filesystem, APIs, or DB)
-4. Reporting/notification boundary
-5. Audit and telemetry hooks
+- Signal intake layer
+- Assessment engine
+- Output formatter for downstream automation
 
-## Operational Requirements
+## Runtime Flow
 
-- Deterministic outputs for core checks and scoring paths
-- Explicit error handling with actionable diagnostics
-- Clear separation between parsing, policy, and side effects
-- Minimal privilege execution for local and CI runs
+1. Receive signal text/event.
+2. Compute deterministic risk score.
+3. Emit structured assessment result.
